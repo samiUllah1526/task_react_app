@@ -20,6 +20,5 @@ export const routesMap = [
   {
     path: "/edit-task/:id",
     component: <EditTask />,
-    isPrivate: true,
   },
 ];

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./navbar";
-import { Container } from "./styles";
+import { Container } from "../styles";
 
 export const Layout = ({ idsToremove, children }) => {
   return (

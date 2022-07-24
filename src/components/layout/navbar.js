@@ -12,7 +12,7 @@ import { removeToken, getToken } from "./../../utlities";
 
 // UI components
 import styled from "styled-components";
-import { Row } from "./../../global.styles";
+import { Row } from "../styles";
 import { message } from "antd";
 
 const Item = styled(Link)`
@@ -51,7 +51,6 @@ export const Navbar = ({ idsToremove }) => {
       ids: idsToremove,
     });
 
-    console.log("Navidte nhai hoga?");
     navigate("/");
   };
 
@@ -63,14 +62,12 @@ export const Navbar = ({ idsToremove }) => {
   const noTaskSelected = idsToremove?.length;
   const disabled = !noTaskSelected;
 
-  console.log("disabled==>", { disabled, noTaskSelected });
   return (
     <>
       <Row justify={"space-between"} bg={"white"} color={"black"}>
         <Row>
           {isLogin && <Item to="/">Home</Item>}
           {isLogin && <Item to="/create-task">Create task</Item>}
-
           {isLogin && (
             <Item to="/" onClick={bulkDelete} disabled={disabled}>
               Delete task(s)
@@ -78,7 +75,6 @@ export const Navbar = ({ idsToremove }) => {
           )}
         </Row>
         <Row>
-          {/* style={disabled} */}
           {isLogin || <Item to="/login">Login</Item>}
           {isLogin && (
             <Item to="/login" onClick={handleLogout}>

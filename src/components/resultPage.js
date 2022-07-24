@@ -1,8 +1,7 @@
 import React from "react";
 import { Result } from "antd";
 import { Layout } from "./layout";
-import { Wrapper } from "./layout/styles";
-import { Row } from "../global.styles";
+import { Wrapper, Row } from "./styles";
 
 export const ResultPage = ({ status, title, subTitle, extra }) => {
   return (

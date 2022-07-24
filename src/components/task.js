@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
-import { Row } from "../global.styles";
+import { EditOutlined } from "@ant-design/icons";
+import { Row } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { Checkbox } from "antd";
 

@@ -8,7 +8,7 @@ import { useMutation, useQuery } from "react-query";
 
 // UI components
 import { Layout } from "../components/layout";
-import { Wrapper } from "../components/layout/styles";
+import { Wrapper } from "../components/styles";
 import { Button, Form, Input, message } from "antd";
 import { Loader } from "../components/loader";
 import { useNavigate, useParams } from "react-router-dom";

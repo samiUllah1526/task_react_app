@@ -12,8 +12,7 @@ import { setToken } from "../utlities";
 // UI components
 import { Button, Form, Input, message } from "antd";
 import { Layout } from "../components/layout";
-import { Wrapper } from "../components/layout/styles";
-import { Label } from "../global.styles";
+import { Wrapper, Label } from "../components/styles";
 
 export const Auth = () => {
   const location = useLocation();

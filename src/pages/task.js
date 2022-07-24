@@ -5,14 +5,13 @@ import { addTask, getTaskByID } from "./../api/axios";
 
 // Hooks
 import { useMutation, useQuery } from "react-query";
+import { useNavigate, useParams } from "react-router-dom";
 
 // UI components
 import { Layout } from "../components/layout";
-import { Wrapper } from "../components/layout/styles";
+import { Wrapper, Label } from "../components/styles";
 import { Button, Form, Input, message } from "antd";
 import { Loader } from "../components/loader";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
-import { Label } from "../global.styles";
 const { TextArea } = Input;
 
 export const Task = () => {

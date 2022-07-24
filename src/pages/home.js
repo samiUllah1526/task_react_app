@@ -5,16 +5,15 @@ import { getTasks } from "./../api/axios";
 
 // Hooks
 import { useQuery } from "react-query";
+import { useNavigate } from "react-router-dom";
 
 // UI components
 import { Button } from "antd";
 import { Task } from "../components";
-import { Wrapper } from "./../components/layout/styles";
+import { Wrapper, Row } from "../components/styles";
 import { Layout } from "./../components/layout";
-import { Row } from "../global.styles";
 import { ResultPage } from "../components/resultPage";
 import { Loader } from "../components/loader";
-import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
   const navigate = useNavigate();
